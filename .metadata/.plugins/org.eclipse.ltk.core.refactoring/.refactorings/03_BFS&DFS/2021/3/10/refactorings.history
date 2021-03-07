@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;problem.BOJ_16236_아기상어_G4.Node&apos; to &apos;Point&apos;&#x0D;&#x0A;- Original project: &apos;03_BFS&amp;DFS&apos;&#x0D;&#x0A;- Original element: &apos;problem.BOJ_16236_아기상어_G4.Node&apos;&#x0D;&#x0A;- Renamed element: &apos;problem.BOJ_16236_아기상어_G4.Point&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Node&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;problem{BOJ_16236_아기상어_G4.java[BOJ_16236_아기상어_G4[Node" matchStrategy="1" name="Point" qualified="false" references="true" similarDeclarations="false" stamp="1615010113510" textual="false" version="1.0"/>
+</session>

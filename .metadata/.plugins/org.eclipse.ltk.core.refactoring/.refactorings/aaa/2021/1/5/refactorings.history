@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;aaa.재혁이형&apos; to &apos;적록색약&apos;&#x0D;&#x0A;- Original project: &apos;aaa&apos;&#x0D;&#x0A;- Original element: &apos;aaa.재혁이형&apos;&#x0D;&#x0A;- Renamed element: &apos;aaa.적록색약&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;재혁이형&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;aaa{재혁이형.java[재혁이형" matchStrategy="1" name="적록색약" qualified="false" references="true" similarDeclarations="false" stamp="1611543895793" textual="false" version="1.0"/>
+</session>

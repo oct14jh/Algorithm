@@ -1,0 +1,51 @@
+package problem;
+
+import java.util.Scanner;
+
+public class BOJ_5904_Moo게임_S1 {
+
+	private static int N;
+	private static int[] SkLength = new int[25];
+	private static char answer;
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new  Scanner(System.in);
+		N = sc.nextInt();
+		
+		SkLength[0] = 3;
+		for(int i = 1; i < SkLength.length; i++) {
+			SkLength[i] = (2 * SkLength[i-1]) + (i + 3);
+		}
+		
+		for(int i = 0; i < SkLength.length; i++) {
+			System.out.println(SkLength[i]);
+		}
+		
+		answer = DP(N);
+		System.out.println(answer);
+		sc.close();
+	}
+
+	private static char DP(int n) {
+		int k = 0;
+		
+		if(n==1)
+			return 'm';
+		if(n==2 || n==3)
+			return 'o';
+		
+		while(n > SkLength[k])
+			k++;
+		
+		if(n == SkLength[k-1] + 1)
+			return 'm';
+		if(n <= SkLength[k-1] + k + 3)
+			return 'o';
+		if(n == SkLength[k])
+			return 'o';
+		
+		int reducingN = n - (SkLength[k-1] + (k+3));
+		return DP(reducingN);
+	}
+}

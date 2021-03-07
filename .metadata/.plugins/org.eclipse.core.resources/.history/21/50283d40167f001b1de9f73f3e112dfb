@@ -1,0 +1,45 @@
+package zzzz;
+
+import java.util.Scanner;
+
+public class Main {
+	private static int N;
+	private static char answer;
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		N = sc.nextInt();
+
+		DP(N);
+
+		System.out.println(answer);
+		sc.close();
+	}
+
+	private static void DP(int n) {
+		int mooInitSize = 3;
+		int mooNextSize = 0;
+		int mooFront = 0;
+		int K = 0;
+
+		if (n == 1) {
+			answer = 'm';
+		} else if (n <= 3) {
+			answer = 'o';
+		} else {
+			while (mooInitSize < n) {
+				mooNextSize = (2 * mooInitSize) + K + 4;
+				K++;
+			}
+			mooFront = (mooNextSize - (K + 3)) / 2;
+
+			if (n >= mooNextSize - mooFront + 1) {
+				DP(n - mooNextSize + mooFront);
+			} else if (n == mooFront + 1)
+				answer = 'm';
+			else
+				answer = 'o';
+		}
+	}
+}
